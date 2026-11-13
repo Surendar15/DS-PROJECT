@@ -1,0 +1,15 @@
+Rank,Feature,Random_Forest_Importance,EDA_Association_Score
+1,PageValues,0.3257,0.4926
+2,ProductRelated,0.1532,0.1585
+3,ExitRates,0.0903,0.2071
+4,Administrative,0.0865,0.1389
+5,Month,0.0687,
+6,BounceRates,0.0552,0.1507
+7,TrafficType,0.0509,
+8,Region,0.0451,
+9,Informational,0.0382,0.0952
+10,Browser,0.0255,
+11,OperatingSystems,0.0237,
+12,VisitorType,0.0168,
+13,Weekend,0.0141,
+14,SpecialDay,0.0062,0.0823

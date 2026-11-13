@@ -1,0 +1,43 @@
+========================================================================
+           DATASET SUMMARY & PREPROCESSING PIPELINE REPORT             
+========================================================================
+
+Project Title: An Empirical Investigation Into E-Commerce Cart Abandonment Factors
+Dataset File : dataset\online_shoppers_intention.csv
+Total Rows   : 12330
+Total Cols   : 18
+Memory Usage : 2.7178 MB
+
+------------------------------------------------------------------------
+FEATURE SPECIFICATIONS
+------------------------------------------------------------------------
+Target Column               : Revenue
+Numerical Features (10)     : Administrative, Administrative_Duration, Informational, Informational_Duration, ProductRelated, ProductRelated_Duration, BounceRates, ExitRates, PageValues, SpecialDay
+Categorical Features (7)   : Month, OperatingSystems, Browser, Region, TrafficType, VisitorType, Weekend
+
+------------------------------------------------------------------------
+DATA QUALITY SUMMARY
+------------------------------------------------------------------------
+Total Missing Values        : 0
+Duplicate Record Count      : 125 (1.0138% of total)
+Duplicate Treatment Note    : Duplicate session feature rows are retained as valid natural traffic distributions.
+
+------------------------------------------------------------------------
+TARGET DISTRIBUTION (Revenue)
+------------------------------------------------------------------------
+Non-Conversion (Revenue=False): 10422 (84.5255%)
+Conversion (Revenue=True)    : 1908 (15.4745%)
+Imbalance Ratio (False:True)  : 5.4623 : 1
+Research Proxy Note          : Revenue=False represents non-conversion sessions, used as proxy for potential cart abandonment.
+
+------------------------------------------------------------------------
+TRAIN / TEST SPLIT (80% Train / 20% Test, Stratified, random_state=42)
+------------------------------------------------------------------------
+X_train Shape               : (9864, 17)
+X_test Shape                : (2466, 17)
+y_train Shape               : (9864,)
+y_test Shape                : (2466,)
+Transformed X_train Shape   : (9864, 75)
+Transformed X_test Shape    : (2466, 75)
+Fitted Preprocessor Path    : ml/models/preprocessor.pkl
+========================================================================

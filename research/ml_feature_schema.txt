@@ -1,0 +1,40 @@
+========================================================================
+             SAVED ML PIPELINE FEATURE SCHEMA SPECIFICATION             
+========================================================================
+
+Pipeline Model Artifact : ml/models/full_pipeline.pkl
+Classifier Type         : RandomForestClassifier (n_estimators=200, class_weight='balanced')
+Preprocessor            : ColumnTransformer (SimpleImputer, StandardScaler, OneHotEncoder)
+Total Raw Input Features: 17
+Total Transformed Dim   : 75
+
+------------------------------------------------------------------------
+NUMERICAL FEATURES (10 Columns)
+------------------------------------------------------------------------
+1. Administrative           : Integer (>= 0)
+2. Administrative_Duration  : Float   (>= 0.0) [seconds]
+3. Informational            : Integer (>= 0)
+4. Informational_Duration   : Float   (>= 0.0) [seconds]
+5. ProductRelated           : Integer (>= 0)
+6. ProductRelated_Duration  : Float   (>= 0.0) [seconds]
+7. BounceRates              : Float   (0.0 <= rate <= 1.0)
+8. ExitRates                : Float   (0.0 <= rate <= 1.0)
+9. PageValues               : Float   (>= 0.0)
+10. SpecialDay              : Float   (0.0 <= day <= 1.0)
+
+------------------------------------------------------------------------
+CATEGORICAL FEATURES (7 Columns)
+------------------------------------------------------------------------
+11. Month                   : String  ['Feb', 'Mar', 'May', 'June', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+12. OperatingSystems        : Integer [1, 2, 3, 4, 5, 6, 7, 8]
+13. Browser                 : Integer [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+14. Region                  : Integer [1, 2, 3, 4, 5, 6, 7, 8, 9]
+15. TrafficType             : Integer [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+16. VisitorType             : String  ['Returning_Visitor', 'New_Visitor', 'Other']
+17. Weekend                 : Boolean [True, False]
+
+------------------------------------------------------------------------
+TARGET VARIABLE
+------------------------------------------------------------------------
+Revenue                     : Boolean / Integer [0 = Non-Conversion, 1 = Conversion]
+========================================================================

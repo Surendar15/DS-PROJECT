@@ -1,0 +1,23 @@
+========================================================================
+                 EDA DATASET OVERVIEW & SUMMARY REPORT                 
+========================================================================
+
+Dataset Location         : dataset/online_shoppers_intention.csv
+Number of Observations   : 12330
+Number of Features       : 17
+Target Variable          : Revenue
+
+------------------------------------------------------------------------
+FEATURE CLASSIFICATION
+------------------------------------------------------------------------
+Numerical Features (14)   : Administrative, Administrative_Duration, Informational, Informational_Duration, ProductRelated, ProductRelated_Duration, BounceRates, ExitRates, PageValues, SpecialDay, OperatingSystems, Browser, Region, TrafficType
+Categorical Features (3): Month, VisitorType, Weekend
+Boolean Features (2)    : Weekend, Revenue
+
+------------------------------------------------------------------------
+TARGET DISTRIBUTION (Revenue)
+------------------------------------------------------------------------
+Revenue = False (Non-Conversion): 10422 (84.53%)
+Revenue = True  (Conversion)    : 1908 (15.47%)
+Imbalance Ratio (False:True)     : 5.46 : 1
+========================================================================

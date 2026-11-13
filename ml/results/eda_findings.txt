@@ -1,0 +1,66 @@
+========================================================================
+             EMPIRICAL EXPLORATORY DATA ANALYSIS (EDA) FINDINGS          
+========================================================================
+
+Research Objective:
+Investigate e-commerce customer behavior factors associated with non-conversion
+and potential cart abandonment to inform targeted conversion optimization.
+
+------------------------------------------------------------------------
+1. OVERALL CONVERSION & SESSION DISTRIBUTION
+------------------------------------------------------------------------
+- Total Browsing Sessions  : 12,330
+- Non-Converting Sessions  : 10,422 (84.53%)
+- Converting Sessions      : 1,908 (15.47%)
+- Class Imbalance Ratio    : 5.46 : 1
+- Research Interpretation : Non-converting sessions (84.53%) represent potential
+  abandonment and drop-off traffic where user intent was not fulfilled.
+
+------------------------------------------------------------------------
+2. PAGEVALUES OBSERVATIONS (STRONGEST EDA PREDICTOR)
+------------------------------------------------------------------------
+- Converting Sessions Mean PageValues    : 27.26
+- Non-Converting Sessions Mean PageValues: 1.98
+- Difference                             : +25.29
+- Empirical Finding                      : High PageValues strongly coincide with
+  completed purchases, whereas sessions with zero or near-zero PageValues account
+  for the vast majority of non-conversions.
+
+------------------------------------------------------------------------
+3. BOUNCE & EXIT RATES (DISENGAGEMENT METRICS)
+------------------------------------------------------------------------
+- Mean Bounce Rate (Non-Converting vs Converting): 0.0253 vs 0.0051
+- Mean Exit Rate (Non-Converting vs Converting)  : 0.0474 vs 0.0196
+- Empirical Finding                      : Non-converting sessions exhibited significantly
+  higher average bounce and exit rates, indicating early drop-off before reaching checkout.
+
+------------------------------------------------------------------------
+4. PRODUCT ENGAGEMENT (PAGE VIEWS & DURATION)
+------------------------------------------------------------------------
+- Mean Product Page Views (Non-Converting vs Converting): 28.71 vs 48.21
+- Mean Product Duration (sec) (Non-Converting vs Conv) : 1069.99 vs 1876.21
+- Empirical Finding                      : Converting sessions engaged with substantially
+  more product pages and spent nearly twice as long exploring products.
+
+------------------------------------------------------------------------
+5. CATEGORICAL & TEMPORAL PATTERNS
+------------------------------------------------------------------------
+- Highest Converting Visitor Group: New_Visitor (24.91% conversion rate)
+- Highest Converting Month        : Nov (25.35% conversion rate)
+- Weekend Conversion vs Weekday   : Weekday conversion rate is 14.89% vs Weekend 17.40%
+
+------------------------------------------------------------------------
+6. BEHAVIORAL FEATURE ASSOCIATION RANKING (PEARSON CORRELATION WITH REVENUE)
+------------------------------------------------------------------------
+  1. PageValues                : Correlation = +0.4926 (Abs Score = 0.4926)
+  2. ExitRates                 : Correlation = -0.2071 (Abs Score = 0.2071)
+  3. ProductRelated            : Correlation = +0.1585 (Abs Score = 0.1585)
+  4. ProductRelated_Duration   : Correlation = +0.1524 (Abs Score = 0.1524)
+  5. BounceRates               : Correlation = -0.1507 (Abs Score = 0.1507)
+  6. Administrative            : Correlation = +0.1389 (Abs Score = 0.1389)
+  7. Informational             : Correlation = +0.0952 (Abs Score = 0.0952)
+  8. Administrative_Duration   : Correlation = +0.0936 (Abs Score = 0.0936)
+  9. SpecialDay                : Correlation = -0.0823 (Abs Score = 0.0823)
+  10. Informational_Duration    : Correlation = +0.0703 (Abs Score = 0.0703)
+
+========================================================================

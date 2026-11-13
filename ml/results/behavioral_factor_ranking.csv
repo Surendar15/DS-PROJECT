@@ -1,0 +1,11 @@
+Rank,Feature,Pearson_Correlation,Absolute_Association_Score
+1,PageValues,0.4926,0.4926
+2,ExitRates,-0.2071,0.2071
+3,ProductRelated,0.1585,0.1585
+4,ProductRelated_Duration,0.1524,0.1524
+5,BounceRates,-0.1507,0.1507
+6,Administrative,0.1389,0.1389
+7,Informational,0.0952,0.0952
+8,Administrative_Duration,0.0936,0.0936
+9,SpecialDay,-0.0823,0.0823
+10,Informational_Duration,0.0703,0.0703

@@ -1,0 +1,54 @@
+========================================================================
+        RESEARCH RESULTS SUMMARY & EXPERIMENTAL TABLE ANALYSIS          
+========================================================================
+
+Project Title: An Empirical Investigation Into E-Commerce Cart Abandonment Factors
+               via Exploratory Data Analysis
+
+------------------------------------------------------------------------
+1. DATASET SPECIFICATIONS (TABLE 1 & 2)
+------------------------------------------------------------------------
+- Total Observations      : 12,330 browsing sessions
+- Original Features       : 17 predictors + 1 target (Revenue)
+- Class Distribution      : Non-Conversion = 10,422 (84.53%), Conversion = 1,908 (15.47%)
+- Class Imbalance Ratio   : 5.46 : 1
+- Data Preprocessing      : 80/20 train/test split (9,864 train / 2,466 test), 75 transformed features
+
+------------------------------------------------------------------------
+2. MODEL CONFIGURATION & EVALUATION (TABLE 5 & 6)
+------------------------------------------------------------------------
+- Classifier              : Random Forest Classifier (n_estimators=200, class_weight='balanced')
+- Accuracy                : 0.8913 (89.13% overall correctness)
+- Precision               : 0.7522 (75.22% of positive predictions are true conversions)
+- Recall                  : 0.4450 (44.50% of actual conversions correctly identified)
+- F1-Score                : 0.5592
+- Area Under ROC Curve    : 0.9171 (Strong overall discrimination ability)
+- Average Precision       : 0.7211
+- Confusion Matrix (Test) : TN = 2,028, FP = 56, FN = 212, TP = 170 (Total = 2,466)
+
+------------------------------------------------------------------------
+3. TOP PREDICTIVE FEATURES (TABLE 7)
+------------------------------------------------------------------------
+1. PageValues              : Importance = 0.325718 (Dominant behavioral indicator)
+2. ExitRates               : Importance = 0.090266 (Disengagement tendency)
+3. ProductRelated_Duration : Importance = 0.082969 (Active exploration time)
+4. ProductRelated          : Importance = 0.070199 (Depth of product page browsing)
+5. BounceRates             : Importance = 0.055189 (Immediate drop-off rate)
+
+------------------------------------------------------------------------
+4. RESEARCH INTERPRETATION & SCIENTIFIC IMPLICATIONS
+------------------------------------------------------------------------
+1. Class Imbalance Impact:
+   The strong 84.53% to 15.47% class imbalance necessitates balancing mechanisms.
+   The model achieves a high ROC-AUC of 0.9171 while maintaining 75.22% precision.
+
+2. Influential Behavioral Variables:
+   Sessions associated with higher PageValues and longer product exploration duration
+   exhibit substantially higher conversion rates. Conversely, elevated ExitRates and
+   BounceRates strongly correlate with non-conversion/abandonment behavior.
+
+3. Practical Recommendations:
+   Online merchants can leverage real-time PageValues and disengagement tracking to
+   trigger dynamic retention interventions (such as targeted discount popups or live
+   assistance) for sessions displaying high abandonment probability prior to exit.
+========================================================================

@@ -1,0 +1,7 @@
+Class,Precision,Recall,F1-score,Support
+Non-Conversion (0),0.9054,0.9731,0.938,2084
+Conversion (1),0.7522,0.445,0.5592,382
+macro avg,0.8288,0.7091,0.7486,2466
+weighted avg,0.8816,0.8913,0.8793,2466
+Overall Accuracy,-,-,0.8913,2466
+ROC-AUC,-,-,0.9171,2466

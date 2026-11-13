@@ -1,0 +1,18 @@
+========================================================================
+            RESEARCH TABLES CHECKSUM & INTEGRITY VALIDATION             
+========================================================================
+
+- Table 1 (Dataset Characteristics)        : PASS
+- Table 2 (Target Class Distribution)      : PASS
+- Table 3 (Behavioral Comparison)          : PASS
+- Table 4 (Categorical Conversion Analysis) : PASS
+- Table 5 (Model Performance)              : PASS
+- Table 6 (Confusion Matrix)               : PASS
+- Table 7 (Feature Importance)             : PASS
+- Research Summary                         : PASS
+
+CHECKSUM CHECKS:
+- Table 2 Observation Sum : 12,330 (10,422 Non-Conversion + 1,908 Conversion) [VERIFIED]
+- Table 6 Test Matrix Sum : 2,466 (2,028 TN + 56 FP + 212 FN + 170 TP)        [VERIFIED]
+- Original Dataset CSV    : Unchanged and intact                             [VERIFIED]
+========================================================================

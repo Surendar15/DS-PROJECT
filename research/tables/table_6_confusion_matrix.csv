@@ -1,0 +1,5 @@
+Actual Class,Predicted Class,Count
+Non-Conversion,Non-Conversion,2028
+Non-Conversion,Conversion,56
+Conversion,Non-Conversion,212
+Conversion,Conversion,170

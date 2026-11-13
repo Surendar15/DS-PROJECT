@@ -1,0 +1,18 @@
+========================================================================
+               RANDOM FOREST MODEL CONFIGURATION REPORT                 
+========================================================================
+
+Dataset                : dataset/online_shoppers_intention.csv
+Target Variable        : Revenue (0 = False, 1 = True)
+Train / Test Split     : 80% Training / 20% Testing (Stratified)
+Random State           : 42
+Classifier             : RandomForestClassifier
+Number of Trees        : 200
+Class Weight           : balanced
+Criterion              : Gini impurity
+Parallel Jobs (n_jobs) : -1
+Preprocessing Pipeline : SimpleImputer + StandardScaler (Numerical)
+                         SimpleImputer + OneHotEncoder(handle_unknown='ignore') (Categorical)
+Saved Model File       : ml/models/random_forest.pkl
+Saved Full Pipeline    : ml/models/full_pipeline.pkl
+========================================================================

@@ -1,0 +1,12 @@
+Parameter,Value
+Total Observations,"12,330"
+Total Original Features,17
+Numerical Features,10
+Categorical Features,5
+Boolean Features,2
+Target Variable,Revenue
+Missing Values,0 (0.00%)
+Duplicate Records,125 (1.01%)
+Training Samples (80%),"9,864"
+Testing Samples (20%),"2,466"
+Preprocessed Feature Count,75

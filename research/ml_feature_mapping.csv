@@ -1,0 +1,18 @@
+Dataset Feature,Frontend Source,Calculation,Data Type,Status,Notes
+Administrative,SessionContext (adminViews),Count of visits to /cart /checkout /account /orders,Integer,Mapped,Increments on administrative navigation
+Administrative_Duration,SessionContext (adminDuration),Active elapsed time (sec) spent on admin pages,Float,Mapped,Accumulated via 1s interval timer
+Informational,SessionContext (infoViews),Count of visits to /about /faq /shipping /returns /contact,Integer,Mapped,Increments on informational page visits
+Informational_Duration,SessionContext (infoDuration),Active elapsed time (sec) spent on info pages,Float,Mapped,Accumulated via 1s interval timer
+ProductRelated,SessionContext (productViews),Count of product grid search and details page views,Integer,Mapped,Increments on home product and detail views
+ProductRelated_Duration,SessionContext (productDuration),Active elapsed time (sec) spent browsing products,Float,Mapped,Accumulated via 1s interval timer
+BounceRates,sessionTracker.js,Single page session bounce approximation formula,Float,Mapped,0.20 for single page; 0.02 / totalPages for multi-page
+ExitRates,sessionTracker.js,Application-level session exit rate calculation,Float,Mapped,exitCount / totalPages bounded [0.0 1.0]
+PageValues,mlFeatureBuilder.js,Application-level PageValues proxy formula,Float,Mapped,(cartSubtotal / totalPages) + (itemCount * 5.0) + (checkoutIntent * 10.0)
+SpecialDay,mlFeatureBuilder.js,Proximity to special holiday calendar occasion,Float,Mapped,Default 0.0 controlled application assumption
+Month,mlFeatureBuilder.js,Derived from system date new Date().getMonth(),String,Mapped,Mapped to dataset string category e.g. May Nov
+OperatingSystems,mlFeatureBuilder.js,Derived from navigator.userAgent platform detection,Integer,Mapped,2 for Windows 1 for Mac/iOS 3 for Android 4 for Linux
+Browser,mlFeatureBuilder.js,Derived from navigator.userAgent browser detection,Integer,Mapped,2 for Chrome 1 for Safari 3 for Firefox 4 for Edge
+Region,mlFeatureBuilder.js,Configured default demo geographical region,Integer,Mapped,Default 1 controlled research demo mapping
+TrafficType,mlFeatureBuilder.js,Acquisition context mapping (search vs direct),Integer,Mapped,2 for Search traffic 1 for Direct navigation
+VisitorType,SessionContext (isNewVisitor),Session storage visitor history marker,String,Mapped,New_Visitor for first session Returning_Visitor if stored
+Weekend,mlFeatureBuilder.js,Derived from new Date().getDay() (Saturday/Sunday),Boolean,Mapped,True for Saturday/Sunday False for Weekday

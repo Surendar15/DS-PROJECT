@@ -1,0 +1,42 @@
+========================================================================
+             RANDOM FOREST MODEL EVALUATION REPORT                      
+========================================================================
+
+DATASET & SPLIT DYNAMICS:
+- Total Dataset Samples : 12,330
+- Testing Set Samples   : 2,466
+- Test Non-Conversions  : 2,084 (84.51%)
+- Test Conversions      : 382 (15.49%)
+
+MODEL PERFORMANCE METRICS (TEST SET):
+- Classification Accuracy : 0.8913
+- Precision (Positive Class): 0.7522
+- Recall (Sensitivity)      : 0.4450
+- F1-Score                  : 0.5592
+- Area Under ROC Curve      : 0.9171
+- Average Precision (PR-AUC): 0.7211
+
+CONFUSION MATRIX BREAKDOWN:
+- True Negatives (TN)  : 2,028 (Correct Non-Conversions)
+- False Positives (FP) : 56 (False Alarms)
+- False Negatives (FN) : 212 (Missed Conversions)
+- True Positives (TP)  : 170 (Correct Conversions)
+
+TOP 10 INFLUENTIAL RANDOM FOREST FEATURES:
+  1. PageValues                     : Importance = 0.325718
+  2. ExitRates                      : Importance = 0.090266
+  3. ProductRelated_Duration        : Importance = 0.082969
+  4. ProductRelated                 : Importance = 0.070199
+  5. BounceRates                    : Importance = 0.055189
+  6. Administrative_Duration        : Importance = 0.046018
+  7. Administrative                 : Importance = 0.040472
+  8. Month_Nov                      : Importance = 0.023529
+  9. Informational_Duration         : Importance = 0.021263
+  10. Informational                  : Importance = 0.016982
+
+NON-CAUSAL MODEL INTERPRETATION:
+The Random Forest Classifier identified PageValues, ExitRates, and ProductRelated
+duration metrics as the most influential features for predicting session conversion.
+Higher PageValues and lower ExitRates strongly associate with conversion likelihood,
+allowing real-time intervention for sessions flagged with high drop-off probability.
+========================================================================
